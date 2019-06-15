@@ -1,0 +1,118 @@
+---
+title: "Homework shinyapp"
+author: "Aliya Davletshina"
+date: "25 02 2019"
+output: word_document
+---
+
+Here is [my shiny app](https://aliyaadav.shinyapps.io/Source/) 
+
+``` {r}
+library(shiny)
+library(shinyBS)
+library(rsconnect)
+library(ggvis)
+library(tidyverse)
+library(psych)
+library(stats)
+library(corrplot)
+library(tidyselect)
+library(plotly)
+
+report <- data.frame(read_csv("happiness_report.csv"))
+
+ui <- fluidPage(
+  HTML('<script> document.title = "Happiness"; </script>'),
+  titlePanel(tags$h3("Happiness")), 
+  tabsetPanel(
+    tabPanel("Plot", 
+             sidebarLayout(
+               sidebarPanel(
+                 selectInput("factor1", "Choose a value:", choices = c("GDPpc", "Family","Life.Expectancy","Freedom", "Generosity", "Trust"), selected = "Family"), 
+                 sliderInput(inputId = "happiness1", label = "Choose level of happiness", 
+                             min = 0, max = 8, value = 7, step = 0.1),
+                 textInput("text1", label = "Choose a header", placeholder = "E.g. a graph"),
+                 actionButton("button1", "Update")
+               ),
+               mainPanel(
+                 plotOutput("plot2"), 
+                 plotlyOutput("plot1")
+               )
+             )
+    ),
+    tabPanel("Table", 
+             sidebarLayout(
+               sidebarPanel(
+                 selectInput("factor2", "Choose a value:", choices = c("GDPpc", "Family","Life.Expectancy", 
+                                                                       "Freedom", "Generosity", "Trust"), selected = "Family"), 
+                 sliderInput(inputId = "happiness2", label = "Choose level of happiness", 
+                             min = 0, max = 8, value = 7, step = 0.1), 
+                 actionButton("button2", "Update")
+               ),
+               mainPanel(
+                 tableOutput("table1"), 
+                 tableOutput("total")
+               )
+             )
+    )
+  )
+)
+
+server <- function(input, output, session) {
+  
+  df <- report
+  
+  df1 <- eventReactive(input$button1,{
+    report %>%
+      filter(Happiness.Score >= input$happiness1) %>%
+      dplyr:: select( "Country", "Continent", "Happiness.Score", input$factor1, "GDPpc")
+  })
+  
+  output$plot2 <- renderPlot({
+    req(df)
+    ggplot(report, aes(x = df$Continent, y = df$Happiness.Score)) +
+      geom_boxplot(aes(fill = Continent)) + theme_bw(base_size = 16) +
+      theme(axis.text.x = element_blank()) +
+      labs(title = "Boxplot", x = "Continent", y = "Happiness Score")
+  })
+  
+  output$plot1 <- renderPlotly({
+    req(df1())
+    p <- ggplot(df1(), aes(x = df1()[,4], y = Happiness.Score))
+    p <- p + geom_point(aes(color = Continent, text = paste("Country:", df1()[,1])), size = 2, alpha = 0.6) + 
+      labs(title = input$text1, x = names(df1())[4], y = "Happiness Score") + 
+      theme_light(base_size = 12) + ylim(2,8) + scale_color_discrete(name = "Continent") 
+    ggplotly(p, tooltip = c("text", "y"))
+  })
+  
+  df2 <- eventReactive(input$button2,{
+    report %>%
+      filter(Happiness.Score >= input$happiness2) %>%
+      dplyr:: select( "Country", "Continent", "Happiness.Score", input$factor2, "GDPpc")
+  })
+  
+  output$table1 <- renderTable({
+    req(df2())
+    head(df2())
+  })
+  
+  total <- reactive ({
+    data.frame(
+      Name = "Total number of countries", 
+      Value = length(df2()[,1])
+    )
+  })
+  
+  output$total <- renderTable(total(), colnames = FALSE)
+}
+
+shinyApp(ui = ui, server = server)
+```
+
+
+
+![Screenshot 1](Shinyapp_1.png)
+
+
+![Screenshot 2](Shinyapp_2.png)
+
