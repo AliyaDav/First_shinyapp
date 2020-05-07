@@ -5,4 +5,4 @@
 layout: default
 ---
 
-{% Homework_shinyapp.rmd %}
+{% include Homework_shinyapp.rmd %}
