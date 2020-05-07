@@ -11,6 +11,8 @@ output:
 
 
 
+
+
 ### World data 
 
 The world is changing very fast, some countries experiencing unprecedented economic growth, others remaining at the same position they were 50 years ago. Today we live in a world which is more diversified then ever and the gap between the poorest and the wealthiest seems to keep growing.  The question is, should we look for the ways to reduce this gap and promote economic development in the poorest countries or should we stand aside? 
@@ -52,27 +54,27 @@ The analysis consist of two parts. Firstly, I've taken the data for all the coun
 The link to my shiny app is [here](https://aliyaadav.shinyapps.io/Economic_development/)
 
 
-<img src="Final_project_files/figure-html/unnamed-chunk-3-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-4-1.png" width="100%" style="display: block; margin: auto;" />
 
 The chart shows that the number of high-income countries had been increasing till 1980, little changed over the next 20 years and in the beginning of the 21st century the number of low-income countries has slightly dropped. 
   
-<img src="Final_project_files/figure-html/unnamed-chunk-4-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-5-1.png" width="100%" style="display: block; margin: auto;" />
 
 The graphs show how average income per capita has changed in different status groups. There was a huge progress in high-income countries whereas income in upper-middle group has been decreasing. The other groups show fluctuations which indicates instability. Overall, we may conclude that the gap between high-income and low-income countries has increased even further. 
   
-<img src="Final_project_files/figure-html/unnamed-chunk-5-1.png" width="100%" style="display: block; margin: auto;" /><img src="Final_project_files/figure-html/unnamed-chunk-5-2.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-6-1.png" width="100%" style="display: block; margin: auto;" /><img src="README_figs/README-unnamed-chunk-6-2.png" width="100%" style="display: block; margin: auto;" />
 
 The maps for 1960 and 2010 illustrate that little has changed in terms of the leading countries -- North America, Europe, Australia and Japan are still among the wealthiest. It is worth pointing out that the highest average income per capita has increased 5 times compared to 1960, which means that on average, we expect a country to have 5 times bigger GDP in 2010 than in 1960. 
 
-<img src="Final_project_files/figure-html/unnamed-chunk-6-1.png" width="100%" style="display: block; margin: auto;" /><img src="Final_project_files/figure-html/unnamed-chunk-6-2.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-7-1.png" width="100%" style="display: block; margin: auto;" /><img src="README_figs/README-unnamed-chunk-7-2.png" width="100%" style="display: block; margin: auto;" />
 
 The maps show that the upper boundary of life expentancy has increased by 15 years while the lower boundary only by 5 years. Overall, life expentancy has increased everywhere but African countries are still falling benind.  
   
-<img src="Final_project_files/figure-html/unnamed-chunk-7-1.png" width="100%" style="display: block; margin: auto;" /><img src="Final_project_files/figure-html/unnamed-chunk-7-2.png" width="100%" style="display: block; margin: auto;" /><img src="Final_project_files/figure-html/unnamed-chunk-7-3.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-8-1.png" width="100%" style="display: block; margin: auto;" /><img src="README_figs/README-unnamed-chunk-8-2.png" width="100%" style="display: block; margin: auto;" /><img src="README_figs/README-unnamed-chunk-8-3.png" width="100%" style="display: block; margin: auto;" />
   
 Comparing these three matrixis it is clear that the correlation between the variables is higher in low-income countries than in other status groups. This might indicate that the more developed a country is, the more complicated is the relation between all the indicators because many other macroeconomic factors (interest rate, tax rate, exchange rate) become significant. 
 
-<img src="Final_project_files/figure-html/unnamed-chunk-8-1.png" width="100%" style="display: block; margin: auto;" /><img src="Final_project_files/figure-html/unnamed-chunk-8-2.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-9-1.png" width="100%" style="display: block; margin: auto;" /><img src="README_figs/README-unnamed-chunk-9-2.png" width="100%" style="display: block; margin: auto;" />
 
 It may seem contradictory but the graphs show that most aid was received by high-income countries whereas low-income group received the least. My hypothesis is that foreign aid is given to a country with an intention to develop a new market and countries with higher income need less assistance to become potential consumer markets for the goods of a donor country.
 
@@ -82,88 +84,88 @@ It may seem contradictory but the graphs show that most aid was received by high
 
 In order to find out which countries  received most aid and showed most progress, I've looked at three regions and here I start with **Latin America**. 
 
-<img src="Final_project_files/figure-html/unnamed-chunk-10-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-11-1.png" width="100%" style="display: block; margin: auto;" />
 
 Historically, the majority of the countries in Latin America belonged to lower-income group, but by 2011 the proportion of lower- and upper-middle income counties has almost equalized. 
 
-<img src="Final_project_files/figure-html/unnamed-chunk-11-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-12-1.png" width="100%" style="display: block; margin: auto;" />
 
 The graph shows how income level has changed in each country. The highest growth was in Trinidad and Tobago whereas Haiti performed the worst. But one should not forget to take into consideration a fatal earthquake of 2010 which led to hundreds of thousands dealths and had a devastating effect on Haiti's economy.  
 
-<img src="Final_project_files/figure-html/unnamed-chunk-12-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-13-1.png" width="100%" style="display: block; margin: auto;" />
 
 The chart shows how income per capita in each country is different from average income per capita in the region. Normally, we would expect half of the countries be on right and the other half on the left, but this chart shows a clear disproportion which means than a couple of countries produce more than a half of the GDP of the region.  
 
-<img src="Final_project_files/figure-html/unnamed-chunk-13-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-14-1.png" width="100%" style="display: block; margin: auto;" />
 
 In Latin America most ODA was received by low-income countries and there is a spike after the economic crisis of 2008. 
-<img src="Final_project_files/figure-html/unnamed-chunk-14-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-15-1.png" width="100%" style="display: block; margin: auto;" />
 
 Now we look at 6 countries which receved most aid and see if there is a correlation between the amount of aid received and the progress countries made. 
 
-<img src="Final_project_files/figure-html/unnamed-chunk-15-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-16-1.png" width="100%" style="display: block; margin: auto;" />
 
 On 6 graphs above dark blue line indicates income per capita and green shows aid per capita. The only country that seems to benefit is Belize, although it is not evident if the aid indeed had any effect on economic growth.  
 
 
-<img src="Final_project_files/figure-html/unnamed-chunk-16-1.png" width="100%" style="display: block; margin: auto;" /><img src="Final_project_files/figure-html/unnamed-chunk-16-2.png" width="100%" style="display: block; margin: auto;" /><img src="Final_project_files/figure-html/unnamed-chunk-16-3.png" width="100%" style="display: block; margin: auto;" /><img src="Final_project_files/figure-html/unnamed-chunk-16-4.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-17-1.png" width="100%" style="display: block; margin: auto;" /><img src="README_figs/README-unnamed-chunk-17-2.png" width="100%" style="display: block; margin: auto;" /><img src="README_figs/README-unnamed-chunk-17-3.png" width="100%" style="display: block; margin: auto;" /><img src="README_figs/README-unnamed-chunk-17-4.png" width="100%" style="display: block; margin: auto;" />
 
 It is interesting that Bolivia, even with the least of 6 countries access to sanition, showed a most progress in terms of increased life expectancy and decreased child noratlity rate. The other thing which stroke me is a spike in child mortality rate in Honduras. After a little research it turned out there was a hurricane in 1998, and "the President of Honduras estimated that Mitch set back 50 years of economic development" of the country.[^1] [^1]:<https://en.wikipedia.org/wiki/Effects_of_Hurricane_Mitch_in_Honduras>  
 
   
 The next region is **West Asia**. 
-<img src="Final_project_files/figure-html/unnamed-chunk-17-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-18-1.png" width="100%" style="display: block; margin: auto;" />
 
 There were no high-income countries in West Asia till 1974 -- the year then oil prices soared. Just in 6 years a quarter of the region turned to high-income countries. However, after 1990 things got worse and by 2011 there was almost equal proportion of each status group. 
 
 
-<img src="Final_project_files/figure-html/unnamed-chunk-18-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-19-1.png" width="100%" style="display: block; margin: auto;" />
 
 
-<img src="Final_project_files/figure-html/unnamed-chunk-19-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-20-1.png" width="100%" style="display: block; margin: auto;" />
 
 In 2009 three main oil exporters remained the wealthiest countries in the region with Israel (which was experiencing a rapid economic growth) catching up. 
 
-<img src="Final_project_files/figure-html/unnamed-chunk-20-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-21-1.png" width="100%" style="display: block; margin: auto;" />
 
 The graph shows no clear pattern in ODA flows.
 
-<img src="Final_project_files/figure-html/unnamed-chunk-21-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-22-1.png" width="100%" style="display: block; margin: auto;" />
 
 Jordan, Israel and Bahrain each received at least twice as much as their nearest neighbours. 
 
-<img src="Final_project_files/figure-html/unnamed-chunk-22-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-23-1.png" width="100%" style="display: block; margin: auto;" />
 
 From the previous graph we see that Jordan received more aid than Israel but it never showed such an advancement as Israel or Oman. 
 
-<img src="Final_project_files/figure-html/unnamed-chunk-23-1.png" width="100%" style="display: block; margin: auto;" /><img src="Final_project_files/figure-html/unnamed-chunk-23-2.png" width="100%" style="display: block; margin: auto;" /><img src="Final_project_files/figure-html/unnamed-chunk-23-3.png" width="100%" style="display: block; margin: auto;" /><img src="Final_project_files/figure-html/unnamed-chunk-23-4.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-24-1.png" width="100%" style="display: block; margin: auto;" /><img src="README_figs/README-unnamed-chunk-24-2.png" width="100%" style="display: block; margin: auto;" /><img src="README_figs/README-unnamed-chunk-24-3.png" width="100%" style="display: block; margin: auto;" /><img src="README_figs/README-unnamed-chunk-24-4.png" width="100%" style="display: block; margin: auto;" />
 
 The country that definitely stands out is Oman. Steep curves of child mortality rate and life expentancy indicate seem to indicate a considerble improve of the quality of life.  
   
   
 The next region is **Africa**.
 
-<img src="Final_project_files/figure-html/unnamed-chunk-24-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-25-1.png" width="100%" style="display: block; margin: auto;" />
 
 The difference from other regions is rather striking. There was little change in 50 years and three fourths of the continent is still low-income countries. 
 
-<img src="Final_project_files/figure-html/unnamed-chunk-25-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-26-1.png" width="100%" style="display: block; margin: auto;" />
 
 Africa is the only continent where the difference among the countries is so striking: income in Zimbabwe has decreased by 32% while Equatorial Guinea showed an increase by 1254%. The rest remained almost at the same level. Such an increase in income in Equatorial Guinea was due to oil and gas exploitation which began in the 1990s.
 
-<img src="Final_project_files/figure-html/unnamed-chunk-26-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-27-1.png" width="100%" style="display: block; margin: auto;" />
 
 This chart is another prove of a vast diversity in the region. Jist a quarter of the continent has income above average and the rest are within one standard deviation from the mean.
 
-<img src="Final_project_files/figure-html/unnamed-chunk-27-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-28-1.png" width="100%" style="display: block; margin: auto;" />
 
 The graph shows that historically (from 1975) ODA was mostly to upper-income countries but it dropped for all the groups after 1996 and began to increase again in the 21st century. Probably it is linked to Millennium Development Goals set by UN in 2000. 
 
 
-<img src="Final_project_files/figure-html/unnamed-chunk-28-1.png" width="100%" style="display: block; margin: auto;" /><img src="Final_project_files/figure-html/unnamed-chunk-28-2.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-29-1.png" width="100%" style="display: block; margin: auto;" /><img src="README_figs/README-unnamed-chunk-29-2.png" width="100%" style="display: block; margin: auto;" />
 
 The graph shows that the only country where income has increased is Botswana. In other countries like Comoros, Guinea-Bissau and Mauritania the aid practically made up a considerable part of GDP.  
-<img src="Final_project_files/figure-html/unnamed-chunk-29-1.png" width="100%" style="display: block; margin: auto;" /><img src="Final_project_files/figure-html/unnamed-chunk-29-2.png" width="100%" style="display: block; margin: auto;" /><img src="Final_project_files/figure-html/unnamed-chunk-29-3.png" width="100%" style="display: block; margin: auto;" /><img src="Final_project_files/figure-html/unnamed-chunk-29-4.png" width="100%" style="display: block; margin: auto;" />
+<img src="README_figs/README-unnamed-chunk-30-1.png" width="100%" style="display: block; margin: auto;" /><img src="README_figs/README-unnamed-chunk-30-2.png" width="100%" style="display: block; margin: auto;" /><img src="README_figs/README-unnamed-chunk-30-3.png" width="100%" style="display: block; margin: auto;" /><img src="README_figs/README-unnamed-chunk-30-4.png" width="100%" style="display: block; margin: auto;" />
 
 There is a high increase of health expenditures in Botswana from 1995 which resulted in increasing life expectancy in the begining of the 21st century. It turns out that the cause of poor health in the coutry in the first place was HIV/AIDS epidemics which hit Botswana in the 1990s. Even though income in the majority of the countries has not changed, nevertheless there are some signs of improvement -- lower child mortality rate and higher life expectancy. 
 
